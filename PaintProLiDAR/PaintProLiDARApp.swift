@@ -1,10 +1,3 @@
-//
-//  PaintProLiDARApp.swift
-//  PaintProLiDAR
-//
-//  Created by Donatello on 3/29/26.
-//
-
 import SwiftUI
 
 @main
