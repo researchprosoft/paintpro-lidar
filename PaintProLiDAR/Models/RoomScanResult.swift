@@ -6,7 +6,7 @@ import RoomPlan
 struct RoomScanResult: Identifiable, Codable {
     let id: UUID
     let date: Date
-    let roomName: String
+    var roomName: String
     var walls: [WallSurface]
     var ceiling: CeilingSurface?
     var openings: [Opening] // doors + windows
