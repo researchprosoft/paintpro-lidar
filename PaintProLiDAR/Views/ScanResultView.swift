@@ -107,6 +107,17 @@ struct ScanResultView: View {
                             MiniStatCard(label: "Openings", value: "-\(scan.totalOpeningArea.sqftFormatted)", color: .red)
                         }
 
+                        // Floor Plan Preview
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("Floor Plan")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                            FloorPlanView(scan: scan)
+                                .frame(height: 180)
+                                .background(Color(hex: "#1a1a1a"))
+                                .cornerRadius(12)
+                        }
+
                         // Actions
                         VStack(spacing: 12) {
                             Button(action: saveAndSendToCRM) {
